@@ -5,8 +5,7 @@
 [![Python](https://img.shields.io/badge/Python-3.x-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
 [![Selenium](https://img.shields.io/badge/Selenium-Automation-43B02A?style=for-the-badge&logo=selenium&logoColor=white)](https://www.selenium.dev/)
 [![Chrome](https://img.shields.io/badge/Chrome-WebDriver-4285F4?style=for-the-badge&logo=googlechrome&logoColor=white)](https://www.google.com/chrome/)
-[![CSV](https://img.shields.io/badge/Storage-CSV-orange?style=for-the-badge)]
-
+[![CSV](https://img.shields.io/badge/Storage-CSV-orange?style=for-the-badge)](https://en.wikipedia.org/wiki/Comma-separated_values)
 ---
 
 ## 🧭 Overview
