@@ -1,0 +1,14 @@
+# Ignore downloaded PDFs, but keep the rest of the repo tracked
+# This allows all other project files and data to be committed normally.
+data/judgements_pdf/*
+!data/judgements_pdf/.gitkeep
+
+# Ignore local Python environments
+venv/
+.venv/
+.env/
+
+# Optional: ignore common local junk
+.DS_Store
+__pycache__/
+*.pyc

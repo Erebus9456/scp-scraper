@@ -1,0 +1,1277 @@
+2026-09-10 20:14:39,208 [INFO] Starting SCP-Fetch Scraper...
+2026-09-10 20:14:39,208 [INFO] Loaded 0 keywords from '/Users/app/Documents/clarodraft/scp_scraper/data/input/keywords.csv'.
+2026-09-10 20:14:39,208 [ERROR] No keywords found in '/Users/app/Documents/clarodraft/scp_scraper/data/input/keywords.csv'. Exiting.
+2026-09-10 20:21:41,231 [INFO] Starting SCP-Fetch Scraper...
+2026-09-10 20:21:41,231 [INFO] Loaded 26 keywords from '/Users/app/Documents/clarodraft/scp_scraper/data/input/keywords.csv'.
+2026-09-10 20:21:41,232 [INFO] Initialized output CSV files with headers.
+2026-09-10 20:21:41,232 [INFO] ====== WebDriver manager ======
+2026-09-10 20:21:48,775 [INFO] Get LATEST chromedriver version for google-chrome
+2026-09-10 20:21:49,004 [INFO] There is no [mac64] chromedriver "152.0.7977.82" for browser google-chrome "152.0.7977" in cache
+2026-09-10 20:21:49,136 [INFO] There is no [mac64] chromedriver "152.0.7977.82" for browser google-chrome "152.0.7977" in cache
+2026-09-10 20:21:49,137 [INFO] Get LATEST chromedriver version for google-chrome
+2026-09-10 20:21:49,797 [INFO] WebDriver version 152.0.7977.82 selected
+2026-09-10 20:21:49,804 [INFO] Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/152.0.7977.82/mac-x64/chromedriver-mac-x64.zip
+2026-09-10 20:21:49,804 [INFO] About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/152.0.7977.82/mac-x64/chromedriver-mac-x64.zip
+2026-09-10 20:21:50,233 [INFO] Driver downloading response is 200
+2026-09-10 20:21:52,323 [INFO] Driver has been saved in cache [/Users/app/.wdm/drivers/chromedriver/mac64/152.0.7977.82]
+2026-09-10 20:22:19,843 [ERROR] Could not find the keyword input box.
+2026-09-10 20:22:40,308 [ERROR] Could not find the keyword input box.
+2026-09-10 20:23:00,776 [ERROR] Could not find the keyword input box.
+2026-09-10 20:23:21,238 [ERROR] Could not find the keyword input box.
+2026-09-10 20:23:41,677 [ERROR] Could not find the keyword input box.
+2026-09-10 20:24:02,146 [ERROR] Could not find the keyword input box.
+2026-09-10 20:24:22,596 [ERROR] Could not find the keyword input box.
+2026-09-10 20:24:43,018 [ERROR] Could not find the keyword input box.
+2026-09-10 20:25:03,445 [ERROR] Could not find the keyword input box.
+2026-09-10 20:25:23,872 [ERROR] Could not find the keyword input box.
+2026-09-10 20:25:44,343 [ERROR] Could not find the keyword input box.
+2026-09-10 20:26:04,670 [ERROR] Could not find the keyword input box.
+2026-09-10 20:26:12,673 [ERROR] Unexpected fatal error occurred: Message: element not interactable
+  (Session info: chrome=152.0.7977.83); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+Stacktrace:
+0   chromedriver                        0x00000001033f951a chromedriver + 4093210
+1   chromedriver                        0x000000010307fda0 chromedriver + 449952
+2   chromedriver                        0x00000001030cca15 chromedriver + 764437
+3   chromedriver                        0x00000001030c9f88 chromedriver + 753544
+4   chromedriver                        0x000000010311cbff chromedriver + 1092607
+5   chromedriver                        0x00000001030c8980 chromedriver + 747904
+6   chromedriver                        0x00000001030c96e1 chromedriver + 751329
+7   chromedriver                        0x00000001033c4848 chromedriver + 3876936
+8   chromedriver                        0x00000001033c83b6 chromedriver + 3892150
+9   chromedriver                        0x00000001033a8afe chromedriver + 3762942
+10  chromedriver                        0x00000001033c8ee2 chromedriver + 3895010
+11  chromedriver                        0x000000010339b770 chromedriver + 3708784
+12  chromedriver                        0x00000001033e6868 chromedriver + 4016232
+13  chromedriver                        0x00000001033e69fc chromedriver + 4016636
+14  chromedriver                        0x00000001033f91c6 chromedriver + 4092358
+15  libsystem_pthread.dylib             0x00007ff807a74e05 _pthread_start + 115
+16  libsystem_pthread.dylib             0x00007ff807a70857 thread_start + 15
+Traceback (most recent call last):
+  File "/Users/app/Documents/clarodraft/scp_scraper/main.py", line 73, in main
+    has_results = execute_keyword_search(driver, kw)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/app/Documents/clarodraft/scp_scraper/src/search_flow.py", line 39, in execute_keyword_search
+    search_input.clear()
+  File "/Users/app/Documents/clarodraft/scp_scraper/.venv/lib/python3.12/site-packages/selenium/webdriver/remote/webelement.py", line 145, in clear
+    self._execute(Command.CLEAR_ELEMENT)
+  File "/Users/app/Documents/clarodraft/scp_scraper/.venv/lib/python3.12/site-packages/selenium/webdriver/remote/webelement.py", line 504, in _execute
+    return self._parent.execute(command, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/app/Documents/clarodraft/scp_scraper/.venv/lib/python3.12/site-packages/selenium/webdriver/remote/webdriver.py", line 506, in execute
+    self.error_handler.check_response(response)
+  File "/Users/app/Documents/clarodraft/scp_scraper/.venv/lib/python3.12/site-packages/selenium/webdriver/remote/errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=152.0.7977.83); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+Stacktrace:
+0   chromedriver                        0x00000001033f951a chromedriver + 4093210
+1   chromedriver                        0x000000010307fda0 chromedriver + 449952
+2   chromedriver                        0x00000001030cca15 chromedriver + 764437
+3   chromedriver                        0x00000001030c9f88 chromedriver + 753544
+4   chromedriver                        0x000000010311cbff chromedriver + 1092607
+5   chromedriver                        0x00000001030c8980 chromedriver + 747904
+6   chromedriver                        0x00000001030c96e1 chromedriver + 751329
+7   chromedriver                        0x00000001033c4848 chromedriver + 3876936
+8   chromedriver                        0x00000001033c83b6 chromedriver + 3892150
+9   chromedriver                        0x00000001033a8afe chromedriver + 3762942
+10  chromedriver                        0x00000001033c8ee2 chromedriver + 3895010
+11  chromedriver                        0x000000010339b770 chromedriver + 3708784
+12  chromedriver                        0x00000001033e6868 chromedriver + 4016232
+13  chromedriver                        0x00000001033e69fc chromedriver + 4016636
+14  chromedriver                        0x00000001033f91c6 chromedriver + 4092358
+15  libsystem_pthread.dylib             0x00007ff807a74e05 _pthread_start + 115
+16  libsystem_pthread.dylib             0x00007ff807a70857 thread_start + 15
+
+2026-09-10 20:26:12,835 [INFO] SCP-Fetch execution terminated.
+2026-09-10 20:26:51,441 [INFO] Starting SCP-Fetch Scraper...
+2026-09-10 20:26:51,442 [INFO] Loaded 26 keywords from '/Users/app/Documents/clarodraft/scp_scraper/data/input/keywords.csv'.
+2026-09-10 20:26:51,442 [INFO] Initialized output CSV files with headers.
+2026-09-10 20:26:51,442 [INFO] ====== WebDriver manager ======
+2026-09-10 20:26:51,595 [INFO] Driver [/Users/app/.wdm/drivers/chromedriver/mac64/152.0.7977.82/chromedriver-mac-x64/chromedriver] found in cache by browser version
+2026-09-10 20:26:56,285 [ERROR] Unexpected fatal error occurred: Message: element not interactable
+  (Session info: chrome=152.0.7977.83); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+Stacktrace:
+0   chromedriver                        0x00000001003ed51a chromedriver + 4093210
+1   chromedriver                        0x0000000100073da0 chromedriver + 449952
+2   chromedriver                        0x00000001000c0a15 chromedriver + 764437
+3   chromedriver                        0x00000001000bdf88 chromedriver + 753544
+4   chromedriver                        0x0000000100110bff chromedriver + 1092607
+5   chromedriver                        0x00000001000bc980 chromedriver + 747904
+6   chromedriver                        0x00000001000bd6e1 chromedriver + 751329
+7   chromedriver                        0x00000001003b8848 chromedriver + 3876936
+8   chromedriver                        0x00000001003bc3b6 chromedriver + 3892150
+9   chromedriver                        0x000000010039cafe chromedriver + 3762942
+10  chromedriver                        0x00000001003bcee2 chromedriver + 3895010
+11  chromedriver                        0x000000010038f770 chromedriver + 3708784
+12  chromedriver                        0x00000001003da868 chromedriver + 4016232
+13  chromedriver                        0x00000001003da9fc chromedriver + 4016636
+14  chromedriver                        0x00000001003ed1c6 chromedriver + 4092358
+15  libsystem_pthread.dylib             0x00007ff807a74e05 _pthread_start + 115
+16  libsystem_pthread.dylib             0x00007ff807a70857 thread_start + 15
+Traceback (most recent call last):
+  File "/Users/app/Documents/clarodraft/scp_scraper/main.py", line 73, in main
+    has_results = execute_keyword_search(driver, kw)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/app/Documents/clarodraft/scp_scraper/src/search_flow.py", line 39, in execute_keyword_search
+    search_input.clear()
+  File "/Users/app/Documents/clarodraft/scp_scraper/.venv/lib/python3.12/site-packages/selenium/webdriver/remote/webelement.py", line 145, in clear
+    self._execute(Command.CLEAR_ELEMENT)
+  File "/Users/app/Documents/clarodraft/scp_scraper/.venv/lib/python3.12/site-packages/selenium/webdriver/remote/webelement.py", line 504, in _execute
+    return self._parent.execute(command, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/app/Documents/clarodraft/scp_scraper/.venv/lib/python3.12/site-packages/selenium/webdriver/remote/webdriver.py", line 506, in execute
+    self.error_handler.check_response(response)
+  File "/Users/app/Documents/clarodraft/scp_scraper/.venv/lib/python3.12/site-packages/selenium/webdriver/remote/errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=152.0.7977.83); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+Stacktrace:
+0   chromedriver                        0x00000001003ed51a chromedriver + 4093210
+1   chromedriver                        0x0000000100073da0 chromedriver + 449952
+2   chromedriver                        0x00000001000c0a15 chromedriver + 764437
+3   chromedriver                        0x00000001000bdf88 chromedriver + 753544
+4   chromedriver                        0x0000000100110bff chromedriver + 1092607
+5   chromedriver                        0x00000001000bc980 chromedriver + 747904
+6   chromedriver                        0x00000001000bd6e1 chromedriver + 751329
+7   chromedriver                        0x00000001003b8848 chromedriver + 3876936
+8   chromedriver                        0x00000001003bc3b6 chromedriver + 3892150
+9   chromedriver                        0x000000010039cafe chromedriver + 3762942
+10  chromedriver                        0x00000001003bcee2 chromedriver + 3895010
+11  chromedriver                        0x000000010038f770 chromedriver + 3708784
+12  chromedriver                        0x00000001003da868 chromedriver + 4016232
+13  chromedriver                        0x00000001003da9fc chromedriver + 4016636
+14  chromedriver                        0x00000001003ed1c6 chromedriver + 4092358
+15  libsystem_pthread.dylib             0x00007ff807a74e05 _pthread_start + 115
+16  libsystem_pthread.dylib             0x00007ff807a70857 thread_start + 15
+
+2026-09-10 20:26:56,406 [INFO] SCP-Fetch execution terminated.
+2026-09-10 20:28:37,387 [INFO] Starting SCP-Fetch Scraper...
+2026-09-10 20:28:37,388 [INFO] Loaded 26 keywords from '/Users/app/Documents/clarodraft/scp_scraper/data/input/keywords.csv'.
+2026-09-10 20:28:37,388 [INFO] Initialized output CSV files with headers.
+2026-09-10 20:28:37,388 [INFO] ====== WebDriver manager ======
+2026-09-10 20:28:37,618 [INFO] Driver [/Users/app/.wdm/drivers/chromedriver/mac64/152.0.7977.82/chromedriver-mac-x64/chromedriver] found in cache by browser version
+2026-09-10 20:41:46,132 [INFO] Appended 3742 records to '/Users/app/Documents/clarodraft/scp_scraper/data/output/judgments_results.csv'.
+2026-09-10 20:55:48,026 [INFO] Appended 3176 records to '/Users/app/Documents/clarodraft/scp_scraper/data/output/judgments_results.csv'.
+2026-09-10 21:06:23,079 [INFO] Appended 3716 records to '/Users/app/Documents/clarodraft/scp_scraper/data/output/judgments_results.csv'.
+2026-09-10 21:14:57,682 [INFO] Appended 3586 records to '/Users/app/Documents/clarodraft/scp_scraper/data/output/judgments_results.csv'.
+2026-09-10 21:22:12,263 [INFO] Appended 3767 records to '/Users/app/Documents/clarodraft/scp_scraper/data/output/judgments_results.csv'.
+2026-09-10 21:30:21,896 [INFO] Appended 3499 records to '/Users/app/Documents/clarodraft/scp_scraper/data/output/judgments_results.csv'.
+2026-09-10 21:37:11,666 [INFO] Appended 3241 records to '/Users/app/Documents/clarodraft/scp_scraper/data/output/judgments_results.csv'.
+2026-09-10 21:48:59,003 [INFO] Appended 3295 records to '/Users/app/Documents/clarodraft/scp_scraper/data/output/judgments_results.csv'.
+2026-09-10 21:56:44,255 [INFO] Appended 3747 records to '/Users/app/Documents/clarodraft/scp_scraper/data/output/judgments_results.csv'.
+2026-09-10 22:02:38,426 [INFO] Appended 2839 records to '/Users/app/Documents/clarodraft/scp_scraper/data/output/judgments_results.csv'.
+2026-09-10 22:06:59,786 [INFO] Appended 2095 records to '/Users/app/Documents/clarodraft/scp_scraper/data/output/judgments_results.csv'.
+2026-09-10 22:14:51,996 [INFO] Appended 3643 records to '/Users/app/Documents/clarodraft/scp_scraper/data/output/judgments_results.csv'.
+2026-09-10 22:22:50,735 [INFO] Appended 3573 records to '/Users/app/Documents/clarodraft/scp_scraper/data/output/judgments_results.csv'.
+2026-09-10 22:32:07,048 [WARNING] Error parsing row: Message: invalid session id: session deleted as the browser has closed the connection
+from disconnected: Unable to receive message from renderer
+  (Session info: chrome=152.0.7977.83); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+0   chromedriver                        0x000000010b87351a chromedriver + 4093210
+1   chromedriver                        0x000000010b4f9ffb chromedriver + 450555
+2   chromedriver                        0x000000010b4e7cfd chromedriver + 376061
+3   chromedriver                        0x000000010b4e78f6 chromedriver + 375030
+4   chromedriver                        0x000000010b4e5509 chromedriver + 365833
+5   chromedriver                        0x000000010b4e5e5f chromedriver + 368223
+6   chromedriver                        0x000000010b4f4f80 chromedriver + 429952
+7   chromedriver                        0x000000010b508f33 chromedriver + 511795
+8   chromedriver                        0x000000010b510a9b chromedriver + 543387
+9   chromedriver                        0x000000010b4e6576 chromedriver + 370038
+10  chromedriver                        0x000000010b508684 chromedriver + 509572
+11  chromedriver                        0x000000010b596ae0 chromedriver + 1092320
+12  chromedriver                        0x000000010b542980 chromedriver + 747904
+13  chromedriver                        0x000000010b5436e1 chromedriver + 751329
+14  chromedriver                        0x000000010b83e848 chromedriver + 3876936
+15  chromedriver                        0x000000010b8423b6 chromedriver + 3892150
+16  chromedriver                        0x000000010b822afe chromedriver + 3762942
+17  chromedriver                        0x000000010b842ee2 chromedriver + 3895010
+18  chromedriver                        0x000000010b815770 chromedriver + 3708784
+19  chromedriver                        0x000000010b860868 chromedriver + 4016232
+20  chromedriver                        0x000000010b8609fc chromedriver + 4016636
+21  chromedriver                        0x000000010b8731c6 chromedriver + 4092358
+22  libsystem_pthread.dylib             0x00007ff807a74e05 _pthread_start + 115
+23  libsystem_pthread.dylib             0x00007ff807a70857 thread_start + 15
+
+2026-09-10 22:32:07,548 [WARNING] Error parsing row: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+0   chromedriver                        0x000000010b87351a chromedriver + 4093210
+1   chromedriver                        0x000000010b4f9da0 chromedriver + 449952
+2   chromedriver                        0x000000010b541b8d chromedriver + 744333
+3   chromedriver                        0x000000010b574346 chromedriver + 951110
+4   chromedriver                        0x000000010b56f134 chromedriver + 930100
+5   chromedriver                        0x000000010b56e937 chromedriver + 928055
+6   chromedriver                        0x000000010b4c558b chromedriver + 234891
+7   chromedriver                        0x000000010b4c5af4 chromedriver + 236276
+8   chromedriver                        0x000000010b4c5fef chromedriver + 237551
+9   chromedriver                        0x000000010b83e848 chromedriver + 3876936
+10  chromedriver                        0x000000010b8423b6 chromedriver + 3892150
+11  chromedriver                        0x000000010b822afe chromedriver + 3762942
+12  chromedriver                        0x000000010b842ee2 chromedriver + 3895010
+13  chromedriver                        0x000000010b815770 chromedriver + 3708784
+14  chromedriver                        0x000000010b4c3c18 chromedriver + 228376
+15  dyld                                0x00007ff8076cf530 start + 3056
+
+2026-09-10 22:32:07,549 [WARNING] Error parsing row: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+0   chromedriver                        0x000000010b87351a chromedriver + 4093210
+1   chromedriver                        0x000000010b4f9da0 chromedriver + 449952
+2   chromedriver                        0x000000010b541b8d chromedriver + 744333
+3   chromedriver                        0x000000010b574346 chromedriver + 951110
+4   chromedriver                        0x000000010b56f134 chromedriver + 930100
+5   chromedriver                        0x000000010b56e937 chromedriver + 928055
+6   chromedriver                        0x000000010b4c558b chromedriver + 234891
+7   chromedriver                        0x000000010b4c5af4 chromedriver + 236276
+8   chromedriver                        0x000000010b4c5fef chromedriver + 237551
+9   chromedriver                        0x000000010b83e848 chromedriver + 3876936
+10  chromedriver                        0x000000010b8423b6 chromedriver + 3892150
+11  chromedriver                        0x000000010b822afe chromedriver + 3762942
+12  chromedriver                        0x000000010b842ee2 chromedriver + 3895010
+13  chromedriver                        0x000000010b815770 chromedriver + 3708784
+14  chromedriver                        0x000000010b4c3c18 chromedriver + 228376
+15  dyld                                0x00007ff8076cf530 start + 3056
+
+2026-09-10 22:32:07,550 [WARNING] Error parsing row: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+0   chromedriver                        0x000000010b87351a chromedriver + 4093210
+1   chromedriver                        0x000000010b4f9da0 chromedriver + 449952
+2   chromedriver                        0x000000010b541b8d chromedriver + 744333
+3   chromedriver                        0x000000010b574346 chromedriver + 951110
+4   chromedriver                        0x000000010b56f134 chromedriver + 930100
+5   chromedriver                        0x000000010b56e937 chromedriver + 928055
+6   chromedriver                        0x000000010b4c558b chromedriver + 234891
+7   chromedriver                        0x000000010b4c5af4 chromedriver + 236276
+8   chromedriver                        0x000000010b4c5fef chromedriver + 237551
+9   chromedriver                        0x000000010b83e848 chromedriver + 3876936
+10  chromedriver                        0x000000010b8423b6 chromedriver + 3892150
+11  chromedriver                        0x000000010b822afe chromedriver + 3762942
+12  chromedriver                        0x000000010b842ee2 chromedriver + 3895010
+13  chromedriver                        0x000000010b815770 chromedriver + 3708784
+14  chromedriver                        0x000000010b4c3c18 chromedriver + 228376
+15  dyld                                0x00007ff8076cf530 start + 3056
+
+2026-09-10 22:32:07,551 [WARNING] Error parsing row: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+0   chromedriver                        0x000000010b87351a chromedriver + 4093210
+1   chromedriver                        0x000000010b4f9da0 chromedriver + 449952
+2   chromedriver                        0x000000010b541b8d chromedriver + 744333
+3   chromedriver                        0x000000010b574346 chromedriver + 951110
+4   chromedriver                        0x000000010b56f134 chromedriver + 930100
+5   chromedriver                        0x000000010b56e937 chromedriver + 928055
+6   chromedriver                        0x000000010b4c558b chromedriver + 234891
+7   chromedriver                        0x000000010b4c5af4 chromedriver + 236276
+8   chromedriver                        0x000000010b4c5fef chromedriver + 237551
+9   chromedriver                        0x000000010b83e848 chromedriver + 3876936
+10  chromedriver                        0x000000010b8423b6 chromedriver + 3892150
+11  chromedriver                        0x000000010b822afe chromedriver + 3762942
+12  chromedriver                        0x000000010b842ee2 chromedriver + 3895010
+13  chromedriver                        0x000000010b815770 chromedriver + 3708784
+14  chromedriver                        0x000000010b4c3c18 chromedriver + 228376
+15  dyld                                0x00007ff8076cf530 start + 3056
+
+2026-09-10 22:32:07,552 [WARNING] Error parsing row: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+0   chromedriver                        0x000000010b87351a chromedriver + 4093210
+1   chromedriver                        0x000000010b4f9da0 chromedriver + 449952
+2   chromedriver                        0x000000010b541b8d chromedriver + 744333
+3   chromedriver                        0x000000010b574346 chromedriver + 951110
+4   chromedriver                        0x000000010b56f134 chromedriver + 930100
+5   chromedriver                        0x000000010b56e937 chromedriver + 928055
+6   chromedriver                        0x000000010b4c558b chromedriver + 234891
+7   chromedriver                        0x000000010b4c5af4 chromedriver + 236276
+8   chromedriver                        0x000000010b4c5fef chromedriver + 237551
+9   chromedriver                        0x000000010b83e848 chromedriver + 3876936
+10  chromedriver                        0x000000010b8423b6 chromedriver + 3892150
+11  chromedriver                        0x000000010b822afe chromedriver + 3762942
+12  chromedriver                        0x000000010b842ee2 chromedriver + 3895010
+13  chromedriver                        0x000000010b815770 chromedriver + 3708784
+14  chromedriver                        0x000000010b4c3c18 chromedriver + 228376
+15  dyld                                0x00007ff8076cf530 start + 3056
+
+2026-09-10 22:32:07,553 [WARNING] Error parsing row: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+0   chromedriver                        0x000000010b87351a chromedriver + 4093210
+1   chromedriver                        0x000000010b4f9da0 chromedriver + 449952
+2   chromedriver                        0x000000010b541b8d chromedriver + 744333
+3   chromedriver                        0x000000010b574346 chromedriver + 951110
+4   chromedriver                        0x000000010b56f134 chromedriver + 930100
+5   chromedriver                        0x000000010b56e937 chromedriver + 928055
+6   chromedriver                        0x000000010b4c558b chromedriver + 234891
+7   chromedriver                        0x000000010b4c5af4 chromedriver + 236276
+8   chromedriver                        0x000000010b4c5fef chromedriver + 237551
+9   chromedriver                        0x000000010b83e848 chromedriver + 3876936
+10  chromedriver                        0x000000010b8423b6 chromedriver + 3892150
+11  chromedriver                        0x000000010b822afe chromedriver + 3762942
+12  chromedriver                        0x000000010b842ee2 chromedriver + 3895010
+13  chromedriver                        0x000000010b815770 chromedriver + 3708784
+14  chromedriver                        0x000000010b4c3c18 chromedriver + 228376
+15  dyld                                0x00007ff8076cf530 start + 3056
+
+2026-09-10 22:32:07,554 [WARNING] Error parsing row: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+0   chromedriver                        0x000000010b87351a chromedriver + 4093210
+1   chromedriver                        0x000000010b4f9da0 chromedriver + 449952
+2   chromedriver                        0x000000010b541b8d chromedriver + 744333
+3   chromedriver                        0x000000010b574346 chromedriver + 951110
+4   chromedriver                        0x000000010b56f134 chromedriver + 930100
+5   chromedriver                        0x000000010b56e937 chromedriver + 928055
+6   chromedriver                        0x000000010b4c558b chromedriver + 234891
+7   chromedriver                        0x000000010b4c5af4 chromedriver + 236276
+8   chromedriver                        0x000000010b4c5fef chromedriver + 237551
+9   chromedriver                        0x000000010b83e848 chromedriver + 3876936
+10  chromedriver                        0x000000010b8423b6 chromedriver + 3892150
+11  chromedriver                        0x000000010b822afe chromedriver + 3762942
+12  chromedriver                        0x000000010b842ee2 chromedriver + 3895010
+13  chromedriver                        0x000000010b815770 chromedriver + 3708784
+14  chromedriver                        0x000000010b4c3c18 chromedriver + 228376
+15  dyld                                0x00007ff8076cf530 start + 3056
+
+2026-09-10 22:32:07,556 [WARNING] Error parsing row: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+0   chromedriver                        0x000000010b87351a chromedriver + 4093210
+1   chromedriver                        0x000000010b4f9da0 chromedriver + 449952
+2   chromedriver                        0x000000010b541b8d chromedriver + 744333
+3   chromedriver                        0x000000010b574346 chromedriver + 951110
+4   chromedriver                        0x000000010b56f134 chromedriver + 930100
+5   chromedriver                        0x000000010b56e937 chromedriver + 928055
+6   chromedriver                        0x000000010b4c558b chromedriver + 234891
+7   chromedriver                        0x000000010b4c5af4 chromedriver + 236276
+8   chromedriver                        0x000000010b4c5fef chromedriver + 237551
+9   chromedriver                        0x000000010b83e848 chromedriver + 3876936
+10  chromedriver                        0x000000010b8423b6 chromedriver + 3892150
+11  chromedriver                        0x000000010b822afe chromedriver + 3762942
+12  chromedriver                        0x000000010b842ee2 chromedriver + 3895010
+13  chromedriver                        0x000000010b815770 chromedriver + 3708784
+14  chromedriver                        0x000000010b4c3c18 chromedriver + 228376
+15  dyld                                0x00007ff8076cf530 start + 3056
+
+2026-09-10 22:32:07,557 [WARNING] Error parsing row: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+0   chromedriver                        0x000000010b87351a chromedriver + 4093210
+1   chromedriver                        0x000000010b4f9da0 chromedriver + 449952
+2   chromedriver                        0x000000010b541b8d chromedriver + 744333
+3   chromedriver                        0x000000010b574346 chromedriver + 951110
+4   chromedriver                        0x000000010b56f134 chromedriver + 930100
+5   chromedriver                        0x000000010b56e937 chromedriver + 928055
+6   chromedriver                        0x000000010b4c558b chromedriver + 234891
+7   chromedriver                        0x000000010b4c5af4 chromedriver + 236276
+8   chromedriver                        0x000000010b4c5fef chromedriver + 237551
+9   chromedriver                        0x000000010b83e848 chromedriver + 3876936
+10  chromedriver                        0x000000010b8423b6 chromedriver + 3892150
+11  chromedriver                        0x000000010b822afe chromedriver + 3762942
+12  chromedriver                        0x000000010b842ee2 chromedriver + 3895010
+13  chromedriver                        0x000000010b815770 chromedriver + 3708784
+14  chromedriver                        0x000000010b4c3c18 chromedriver + 228376
+15  dyld                                0x00007ff8076cf530 start + 3056
+
+2026-09-10 22:32:07,558 [WARNING] Error parsing row: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+0   chromedriver                        0x000000010b87351a chromedriver + 4093210
+1   chromedriver                        0x000000010b4f9da0 chromedriver + 449952
+2   chromedriver                        0x000000010b541b8d chromedriver + 744333
+3   chromedriver                        0x000000010b574346 chromedriver + 951110
+4   chromedriver                        0x000000010b56f134 chromedriver + 930100
+5   chromedriver                        0x000000010b56e937 chromedriver + 928055
+6   chromedriver                        0x000000010b4c558b chromedriver + 234891
+7   chromedriver                        0x000000010b4c5af4 chromedriver + 236276
+8   chromedriver                        0x000000010b4c5fef chromedriver + 237551
+9   chromedriver                        0x000000010b83e848 chromedriver + 3876936
+10  chromedriver                        0x000000010b8423b6 chromedriver + 3892150
+11  chromedriver                        0x000000010b822afe chromedriver + 3762942
+12  chromedriver                        0x000000010b842ee2 chromedriver + 3895010
+13  chromedriver                        0x000000010b815770 chromedriver + 3708784
+14  chromedriver                        0x000000010b4c3c18 chromedriver + 228376
+15  dyld                                0x00007ff8076cf530 start + 3056
+
+2026-09-10 22:32:07,559 [WARNING] Error parsing row: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+0   chromedriver                        0x000000010b87351a chromedriver + 4093210
+1   chromedriver                        0x000000010b4f9da0 chromedriver + 449952
+2   chromedriver                        0x000000010b541b8d chromedriver + 744333
+3   chromedriver                        0x000000010b574346 chromedriver + 951110
+4   chromedriver                        0x000000010b56f134 chromedriver + 930100
+5   chromedriver                        0x000000010b56e937 chromedriver + 928055
+6   chromedriver                        0x000000010b4c558b chromedriver + 234891
+7   chromedriver                        0x000000010b4c5af4 chromedriver + 236276
+8   chromedriver                        0x000000010b4c5fef chromedriver + 237551
+9   chromedriver                        0x000000010b83e848 chromedriver + 3876936
+10  chromedriver                        0x000000010b8423b6 chromedriver + 3892150
+11  chromedriver                        0x000000010b822afe chromedriver + 3762942
+12  chromedriver                        0x000000010b842ee2 chromedriver + 3895010
+13  chromedriver                        0x000000010b815770 chromedriver + 3708784
+14  chromedriver                        0x000000010b4c3c18 chromedriver + 228376
+15  dyld                                0x00007ff8076cf530 start + 3056
+
+2026-09-10 22:32:07,560 [WARNING] Error parsing row: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+0   chromedriver                        0x000000010b87351a chromedriver + 4093210
+1   chromedriver                        0x000000010b4f9da0 chromedriver + 449952
+2   chromedriver                        0x000000010b541b8d chromedriver + 744333
+3   chromedriver                        0x000000010b574346 chromedriver + 951110
+4   chromedriver                        0x000000010b56f134 chromedriver + 930100
+5   chromedriver                        0x000000010b56e937 chromedriver + 928055
+6   chromedriver                        0x000000010b4c558b chromedriver + 234891
+7   chromedriver                        0x000000010b4c5af4 chromedriver + 236276
+8   chromedriver                        0x000000010b4c5fef chromedriver + 237551
+9   chromedriver                        0x000000010b83e848 chromedriver + 3876936
+10  chromedriver                        0x000000010b8423b6 chromedriver + 3892150
+11  chromedriver                        0x000000010b822afe chromedriver + 3762942
+12  chromedriver                        0x000000010b842ee2 chromedriver + 3895010
+13  chromedriver                        0x000000010b815770 chromedriver + 3708784
+14  chromedriver                        0x000000010b4c3c18 chromedriver + 228376
+15  dyld                                0x00007ff8076cf530 start + 3056
+
+2026-09-10 22:32:07,561 [WARNING] Error parsing row: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+0   chromedriver                        0x000000010b87351a chromedriver + 4093210
+1   chromedriver                        0x000000010b4f9da0 chromedriver + 449952
+2   chromedriver                        0x000000010b541b8d chromedriver + 744333
+3   chromedriver                        0x000000010b574346 chromedriver + 951110
+4   chromedriver                        0x000000010b56f134 chromedriver + 930100
+5   chromedriver                        0x000000010b56e937 chromedriver + 928055
+6   chromedriver                        0x000000010b4c558b chromedriver + 234891
+7   chromedriver                        0x000000010b4c5af4 chromedriver + 236276
+8   chromedriver                        0x000000010b4c5fef chromedriver + 237551
+9   chromedriver                        0x000000010b83e848 chromedriver + 3876936
+10  chromedriver                        0x000000010b8423b6 chromedriver + 3892150
+11  chromedriver                        0x000000010b822afe chromedriver + 3762942
+12  chromedriver                        0x000000010b842ee2 chromedriver + 3895010
+13  chromedriver                        0x000000010b815770 chromedriver + 3708784
+14  chromedriver                        0x000000010b4c3c18 chromedriver + 228376
+15  dyld                                0x00007ff8076cf530 start + 3056
+
+2026-09-10 22:32:07,562 [WARNING] Error parsing row: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+0   chromedriver                        0x000000010b87351a chromedriver + 4093210
+1   chromedriver                        0x000000010b4f9da0 chromedriver + 449952
+2   chromedriver                        0x000000010b541b8d chromedriver + 744333
+3   chromedriver                        0x000000010b574346 chromedriver + 951110
+4   chromedriver                        0x000000010b56f134 chromedriver + 930100
+5   chromedriver                        0x000000010b56e937 chromedriver + 928055
+6   chromedriver                        0x000000010b4c558b chromedriver + 234891
+7   chromedriver                        0x000000010b4c5af4 chromedriver + 236276
+8   chromedriver                        0x000000010b4c5fef chromedriver + 237551
+9   chromedriver                        0x000000010b83e848 chromedriver + 3876936
+10  chromedriver                        0x000000010b8423b6 chromedriver + 3892150
+11  chromedriver                        0x000000010b822afe chromedriver + 3762942
+12  chromedriver                        0x000000010b842ee2 chromedriver + 3895010
+13  chromedriver                        0x000000010b815770 chromedriver + 3708784
+14  chromedriver                        0x000000010b4c3c18 chromedriver + 228376
+15  dyld                                0x00007ff8076cf530 start + 3056
+
+2026-09-10 22:32:07,564 [WARNING] Error parsing row: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+0   chromedriver                        0x000000010b87351a chromedriver + 4093210
+1   chromedriver                        0x000000010b4f9da0 chromedriver + 449952
+2   chromedriver                        0x000000010b541b8d chromedriver + 744333
+3   chromedriver                        0x000000010b574346 chromedriver + 951110
+4   chromedriver                        0x000000010b56f134 chromedriver + 930100
+5   chromedriver                        0x000000010b56e937 chromedriver + 928055
+6   chromedriver                        0x000000010b4c558b chromedriver + 234891
+7   chromedriver                        0x000000010b4c5af4 chromedriver + 236276
+8   chromedriver                        0x000000010b4c5fef chromedriver + 237551
+9   chromedriver                        0x000000010b83e848 chromedriver + 3876936
+10  chromedriver                        0x000000010b8423b6 chromedriver + 3892150
+11  chromedriver                        0x000000010b822afe chromedriver + 3762942
+12  chromedriver                        0x000000010b842ee2 chromedriver + 3895010
+13  chromedriver                        0x000000010b815770 chromedriver + 3708784
+14  chromedriver                        0x000000010b4c3c18 chromedriver + 228376
+15  dyld                                0x00007ff8076cf530 start + 3056
+
+2026-09-10 22:32:07,565 [WARNING] Error parsing row: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+0   chromedriver                        0x000000010b87351a chromedriver + 4093210
+1   chromedriver                        0x000000010b4f9da0 chromedriver + 449952
+2   chromedriver                        0x000000010b541b8d chromedriver + 744333
+3   chromedriver                        0x000000010b574346 chromedriver + 951110
+4   chromedriver                        0x000000010b56f134 chromedriver + 930100
+5   chromedriver                        0x000000010b56e937 chromedriver + 928055
+6   chromedriver                        0x000000010b4c558b chromedriver + 234891
+7   chromedriver                        0x000000010b4c5af4 chromedriver + 236276
+8   chromedriver                        0x000000010b4c5fef chromedriver + 237551
+9   chromedriver                        0x000000010b83e848 chromedriver + 3876936
+10  chromedriver                        0x000000010b8423b6 chromedriver + 3892150
+11  chromedriver                        0x000000010b822afe chromedriver + 3762942
+12  chromedriver                        0x000000010b842ee2 chromedriver + 3895010
+13  chromedriver                        0x000000010b815770 chromedriver + 3708784
+14  chromedriver                        0x000000010b4c3c18 chromedriver + 228376
+15  dyld                                0x00007ff8076cf530 start + 3056
+
+2026-09-10 22:32:07,567 [ERROR] Error processing keyword 'n': Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+0   chromedriver                        0x000000010b87351a chromedriver + 4093210
+1   chromedriver                        0x000000010b4f9da0 chromedriver + 449952
+2   chromedriver                        0x000000010b541b8d chromedriver + 744333
+3   chromedriver                        0x000000010b574346 chromedriver + 951110
+4   chromedriver                        0x000000010b56f134 chromedriver + 930100
+5   chromedriver                        0x000000010b56e937 chromedriver + 928055
+6   chromedriver                        0x000000010b4c558b chromedriver + 234891
+7   chromedriver                        0x000000010b4c5af4 chromedriver + 236276
+8   chromedriver                        0x000000010b4c5fef chromedriver + 237551
+9   chromedriver                        0x000000010b83e848 chromedriver + 3876936
+10  chromedriver                        0x000000010b8423b6 chromedriver + 3892150
+11  chromedriver                        0x000000010b822afe chromedriver + 3762942
+12  chromedriver                        0x000000010b842ee2 chromedriver + 3895010
+13  chromedriver                        0x000000010b815770 chromedriver + 3708784
+14  chromedriver                        0x000000010b4c3c18 chromedriver + 228376
+15  dyld                                0x00007ff8076cf530 start + 3056
+Traceback (most recent call last):
+  File "/Users/app/Documents/clarodraft/scp_scraper/main.py", line 80, in main
+    keyword_records = paginate_and_extract(driver, kw)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/app/Documents/clarodraft/scp_scraper/src/paginator.py", line 51, in paginate_and_extract
+    pagination_rows = driver.find_elements(*XPATH_PAGINATION_ROW)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/app/Documents/clarodraft/scp_scraper/.venv/lib/python3.12/site-packages/selenium/webdriver/remote/webdriver.py", line 944, in find_elements
+    return self.execute(Command.FIND_ELEMENTS, {"using": by, "value": value})["value"] or []
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/app/Documents/clarodraft/scp_scraper/.venv/lib/python3.12/site-packages/selenium/webdriver/remote/webdriver.py", line 506, in execute
+    self.error_handler.check_response(response)
+  File "/Users/app/Documents/clarodraft/scp_scraper/.venv/lib/python3.12/site-packages/selenium/webdriver/remote/errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSessionIdException: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+0   chromedriver                        0x000000010b87351a chromedriver + 4093210
+1   chromedriver                        0x000000010b4f9da0 chromedriver + 449952
+2   chromedriver                        0x000000010b541b8d chromedriver + 744333
+3   chromedriver                        0x000000010b574346 chromedriver + 951110
+4   chromedriver                        0x000000010b56f134 chromedriver + 930100
+5   chromedriver                        0x000000010b56e937 chromedriver + 928055
+6   chromedriver                        0x000000010b4c558b chromedriver + 234891
+7   chromedriver                        0x000000010b4c5af4 chromedriver + 236276
+8   chromedriver                        0x000000010b4c5fef chromedriver + 237551
+9   chromedriver                        0x000000010b83e848 chromedriver + 3876936
+10  chromedriver                        0x000000010b8423b6 chromedriver + 3892150
+11  chromedriver                        0x000000010b822afe chromedriver + 3762942
+12  chromedriver                        0x000000010b842ee2 chromedriver + 3895010
+13  chromedriver                        0x000000010b815770 chromedriver + 3708784
+14  chromedriver                        0x000000010b4c3c18 chromedriver + 228376
+15  dyld                                0x00007ff8076cf530 start + 3056
+
+2026-09-10 22:32:07,572 [ERROR] Error processing keyword 'o': Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+0   chromedriver                        0x000000010b87351a chromedriver + 4093210
+1   chromedriver                        0x000000010b4f9da0 chromedriver + 449952
+2   chromedriver                        0x000000010b541b8d chromedriver + 744333
+3   chromedriver                        0x000000010b574346 chromedriver + 951110
+4   chromedriver                        0x000000010b56f134 chromedriver + 930100
+5   chromedriver                        0x000000010b56e937 chromedriver + 928055
+6   chromedriver                        0x000000010b4c558b chromedriver + 234891
+7   chromedriver                        0x000000010b4c5af4 chromedriver + 236276
+8   chromedriver                        0x000000010b4c5fef chromedriver + 237551
+9   chromedriver                        0x000000010b83e848 chromedriver + 3876936
+10  chromedriver                        0x000000010b8423b6 chromedriver + 3892150
+11  chromedriver                        0x000000010b822afe chromedriver + 3762942
+12  chromedriver                        0x000000010b842ee2 chromedriver + 3895010
+13  chromedriver                        0x000000010b815770 chromedriver + 3708784
+14  chromedriver                        0x000000010b4c3c18 chromedriver + 228376
+15  dyld                                0x00007ff8076cf530 start + 3056
+Traceback (most recent call last):
+  File "/Users/app/Documents/clarodraft/scp_scraper/main.py", line 74, in main
+    has_results = execute_keyword_search(driver, kw)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/app/Documents/clarodraft/scp_scraper/src/search_flow.py", line 61, in execute_keyword_search
+    WebDriverWait(driver, EXPLICIT_WAIT_TIMEOUT).until(
+  File "/Users/app/Documents/clarodraft/scp_scraper/.venv/lib/python3.12/site-packages/selenium/webdriver/support/wait.py", line 112, in until
+    value = method(self._driver)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/app/Documents/clarodraft/scp_scraper/src/search_flow.py", line 62, in <lambda>
+    lambda d: d.execute_script("return document.readyState") == "complete"
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/app/Documents/clarodraft/scp_scraper/.venv/lib/python3.12/site-packages/selenium/webdriver/remote/webdriver.py", line 616, in execute_script
+    return self.execute(command, {"script": script, "args": converted_args})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/app/Documents/clarodraft/scp_scraper/.venv/lib/python3.12/site-packages/selenium/webdriver/remote/webdriver.py", line 506, in execute
+    self.error_handler.check_response(response)
+  File "/Users/app/Documents/clarodraft/scp_scraper/.venv/lib/python3.12/site-packages/selenium/webdriver/remote/errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSessionIdException: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+0   chromedriver                        0x000000010b87351a chromedriver + 4093210
+1   chromedriver                        0x000000010b4f9da0 chromedriver + 449952
+2   chromedriver                        0x000000010b541b8d chromedriver + 744333
+3   chromedriver                        0x000000010b574346 chromedriver + 951110
+4   chromedriver                        0x000000010b56f134 chromedriver + 930100
+5   chromedriver                        0x000000010b56e937 chromedriver + 928055
+6   chromedriver                        0x000000010b4c558b chromedriver + 234891
+7   chromedriver                        0x000000010b4c5af4 chromedriver + 236276
+8   chromedriver                        0x000000010b4c5fef chromedriver + 237551
+9   chromedriver                        0x000000010b83e848 chromedriver + 3876936
+10  chromedriver                        0x000000010b8423b6 chromedriver + 3892150
+11  chromedriver                        0x000000010b822afe chromedriver + 3762942
+12  chromedriver                        0x000000010b842ee2 chromedriver + 3895010
+13  chromedriver                        0x000000010b815770 chromedriver + 3708784
+14  chromedriver                        0x000000010b4c3c18 chromedriver + 228376
+15  dyld                                0x00007ff8076cf530 start + 3056
+
+2026-09-10 22:32:07,580 [ERROR] Error processing keyword 'p': Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+0   chromedriver                        0x000000010b87351a chromedriver + 4093210
+1   chromedriver                        0x000000010b4f9da0 chromedriver + 449952
+2   chromedriver                        0x000000010b541b8d chromedriver + 744333
+3   chromedriver                        0x000000010b574346 chromedriver + 951110
+4   chromedriver                        0x000000010b56f134 chromedriver + 930100
+5   chromedriver                        0x000000010b56e937 chromedriver + 928055
+6   chromedriver                        0x000000010b4c558b chromedriver + 234891
+7   chromedriver                        0x000000010b4c5af4 chromedriver + 236276
+8   chromedriver                        0x000000010b4c5fef chromedriver + 237551
+9   chromedriver                        0x000000010b83e848 chromedriver + 3876936
+10  chromedriver                        0x000000010b8423b6 chromedriver + 3892150
+11  chromedriver                        0x000000010b822afe chromedriver + 3762942
+12  chromedriver                        0x000000010b842ee2 chromedriver + 3895010
+13  chromedriver                        0x000000010b815770 chromedriver + 3708784
+14  chromedriver                        0x000000010b4c3c18 chromedriver + 228376
+15  dyld                                0x00007ff8076cf530 start + 3056
+Traceback (most recent call last):
+  File "/Users/app/Documents/clarodraft/scp_scraper/main.py", line 74, in main
+    has_results = execute_keyword_search(driver, kw)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/app/Documents/clarodraft/scp_scraper/src/search_flow.py", line 61, in execute_keyword_search
+    WebDriverWait(driver, EXPLICIT_WAIT_TIMEOUT).until(
+  File "/Users/app/Documents/clarodraft/scp_scraper/.venv/lib/python3.12/site-packages/selenium/webdriver/support/wait.py", line 112, in until
+    value = method(self._driver)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/app/Documents/clarodraft/scp_scraper/src/search_flow.py", line 62, in <lambda>
+    lambda d: d.execute_script("return document.readyState") == "complete"
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/app/Documents/clarodraft/scp_scraper/.venv/lib/python3.12/site-packages/selenium/webdriver/remote/webdriver.py", line 616, in execute_script
+    return self.execute(command, {"script": script, "args": converted_args})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/app/Documents/clarodraft/scp_scraper/.venv/lib/python3.12/site-packages/selenium/webdriver/remote/webdriver.py", line 506, in execute
+    self.error_handler.check_response(response)
+  File "/Users/app/Documents/clarodraft/scp_scraper/.venv/lib/python3.12/site-packages/selenium/webdriver/remote/errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSessionIdException: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+0   chromedriver                        0x000000010b87351a chromedriver + 4093210
+1   chromedriver                        0x000000010b4f9da0 chromedriver + 449952
+2   chromedriver                        0x000000010b541b8d chromedriver + 744333
+3   chromedriver                        0x000000010b574346 chromedriver + 951110
+4   chromedriver                        0x000000010b56f134 chromedriver + 930100
+5   chromedriver                        0x000000010b56e937 chromedriver + 928055
+6   chromedriver                        0x000000010b4c558b chromedriver + 234891
+7   chromedriver                        0x000000010b4c5af4 chromedriver + 236276
+8   chromedriver                        0x000000010b4c5fef chromedriver + 237551
+9   chromedriver                        0x000000010b83e848 chromedriver + 3876936
+10  chromedriver                        0x000000010b8423b6 chromedriver + 3892150
+11  chromedriver                        0x000000010b822afe chromedriver + 3762942
+12  chromedriver                        0x000000010b842ee2 chromedriver + 3895010
+13  chromedriver                        0x000000010b815770 chromedriver + 3708784
+14  chromedriver                        0x000000010b4c3c18 chromedriver + 228376
+15  dyld                                0x00007ff8076cf530 start + 3056
+
+2026-09-10 22:32:07,583 [ERROR] Error processing keyword 'q': Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+0   chromedriver                        0x000000010b87351a chromedriver + 4093210
+1   chromedriver                        0x000000010b4f9da0 chromedriver + 449952
+2   chromedriver                        0x000000010b541b8d chromedriver + 744333
+3   chromedriver                        0x000000010b574346 chromedriver + 951110
+4   chromedriver                        0x000000010b56f134 chromedriver + 930100
+5   chromedriver                        0x000000010b56e937 chromedriver + 928055
+6   chromedriver                        0x000000010b4c558b chromedriver + 234891
+7   chromedriver                        0x000000010b4c5af4 chromedriver + 236276
+8   chromedriver                        0x000000010b4c5fef chromedriver + 237551
+9   chromedriver                        0x000000010b83e848 chromedriver + 3876936
+10  chromedriver                        0x000000010b8423b6 chromedriver + 3892150
+11  chromedriver                        0x000000010b822afe chromedriver + 3762942
+12  chromedriver                        0x000000010b842ee2 chromedriver + 3895010
+13  chromedriver                        0x000000010b815770 chromedriver + 3708784
+14  chromedriver                        0x000000010b4c3c18 chromedriver + 228376
+15  dyld                                0x00007ff8076cf530 start + 3056
+Traceback (most recent call last):
+  File "/Users/app/Documents/clarodraft/scp_scraper/main.py", line 74, in main
+    has_results = execute_keyword_search(driver, kw)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/app/Documents/clarodraft/scp_scraper/src/search_flow.py", line 61, in execute_keyword_search
+    WebDriverWait(driver, EXPLICIT_WAIT_TIMEOUT).until(
+  File "/Users/app/Documents/clarodraft/scp_scraper/.venv/lib/python3.12/site-packages/selenium/webdriver/support/wait.py", line 112, in until
+    value = method(self._driver)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/app/Documents/clarodraft/scp_scraper/src/search_flow.py", line 62, in <lambda>
+    lambda d: d.execute_script("return document.readyState") == "complete"
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/app/Documents/clarodraft/scp_scraper/.venv/lib/python3.12/site-packages/selenium/webdriver/remote/webdriver.py", line 616, in execute_script
+    return self.execute(command, {"script": script, "args": converted_args})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/app/Documents/clarodraft/scp_scraper/.venv/lib/python3.12/site-packages/selenium/webdriver/remote/webdriver.py", line 506, in execute
+    self.error_handler.check_response(response)
+  File "/Users/app/Documents/clarodraft/scp_scraper/.venv/lib/python3.12/site-packages/selenium/webdriver/remote/errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSessionIdException: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+0   chromedriver                        0x000000010b87351a chromedriver + 4093210
+1   chromedriver                        0x000000010b4f9da0 chromedriver + 449952
+2   chromedriver                        0x000000010b541b8d chromedriver + 744333
+3   chromedriver                        0x000000010b574346 chromedriver + 951110
+4   chromedriver                        0x000000010b56f134 chromedriver + 930100
+5   chromedriver                        0x000000010b56e937 chromedriver + 928055
+6   chromedriver                        0x000000010b4c558b chromedriver + 234891
+7   chromedriver                        0x000000010b4c5af4 chromedriver + 236276
+8   chromedriver                        0x000000010b4c5fef chromedriver + 237551
+9   chromedriver                        0x000000010b83e848 chromedriver + 3876936
+10  chromedriver                        0x000000010b8423b6 chromedriver + 3892150
+11  chromedriver                        0x000000010b822afe chromedriver + 3762942
+12  chromedriver                        0x000000010b842ee2 chromedriver + 3895010
+13  chromedriver                        0x000000010b815770 chromedriver + 3708784
+14  chromedriver                        0x000000010b4c3c18 chromedriver + 228376
+15  dyld                                0x00007ff8076cf530 start + 3056
+
+2026-09-10 22:32:07,586 [ERROR] Error processing keyword 'r': Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+0   chromedriver                        0x000000010b87351a chromedriver + 4093210
+1   chromedriver                        0x000000010b4f9da0 chromedriver + 449952
+2   chromedriver                        0x000000010b541b8d chromedriver + 744333
+3   chromedriver                        0x000000010b574346 chromedriver + 951110
+4   chromedriver                        0x000000010b56f134 chromedriver + 930100
+5   chromedriver                        0x000000010b56e937 chromedriver + 928055
+6   chromedriver                        0x000000010b4c558b chromedriver + 234891
+7   chromedriver                        0x000000010b4c5af4 chromedriver + 236276
+8   chromedriver                        0x000000010b4c5fef chromedriver + 237551
+9   chromedriver                        0x000000010b83e848 chromedriver + 3876936
+10  chromedriver                        0x000000010b8423b6 chromedriver + 3892150
+11  chromedriver                        0x000000010b822afe chromedriver + 3762942
+12  chromedriver                        0x000000010b842ee2 chromedriver + 3895010
+13  chromedriver                        0x000000010b815770 chromedriver + 3708784
+14  chromedriver                        0x000000010b4c3c18 chromedriver + 228376
+15  dyld                                0x00007ff8076cf530 start + 3056
+Traceback (most recent call last):
+  File "/Users/app/Documents/clarodraft/scp_scraper/main.py", line 74, in main
+    has_results = execute_keyword_search(driver, kw)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/app/Documents/clarodraft/scp_scraper/src/search_flow.py", line 61, in execute_keyword_search
+    WebDriverWait(driver, EXPLICIT_WAIT_TIMEOUT).until(
+  File "/Users/app/Documents/clarodraft/scp_scraper/.venv/lib/python3.12/site-packages/selenium/webdriver/support/wait.py", line 112, in until
+    value = method(self._driver)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/app/Documents/clarodraft/scp_scraper/src/search_flow.py", line 62, in <lambda>
+    lambda d: d.execute_script("return document.readyState") == "complete"
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/app/Documents/clarodraft/scp_scraper/.venv/lib/python3.12/site-packages/selenium/webdriver/remote/webdriver.py", line 616, in execute_script
+    return self.execute(command, {"script": script, "args": converted_args})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/app/Documents/clarodraft/scp_scraper/.venv/lib/python3.12/site-packages/selenium/webdriver/remote/webdriver.py", line 506, in execute
+    self.error_handler.check_response(response)
+  File "/Users/app/Documents/clarodraft/scp_scraper/.venv/lib/python3.12/site-packages/selenium/webdriver/remote/errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSessionIdException: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+0   chromedriver                        0x000000010b87351a chromedriver + 4093210
+1   chromedriver                        0x000000010b4f9da0 chromedriver + 449952
+2   chromedriver                        0x000000010b541b8d chromedriver + 744333
+3   chromedriver                        0x000000010b574346 chromedriver + 951110
+4   chromedriver                        0x000000010b56f134 chromedriver + 930100
+5   chromedriver                        0x000000010b56e937 chromedriver + 928055
+6   chromedriver                        0x000000010b4c558b chromedriver + 234891
+7   chromedriver                        0x000000010b4c5af4 chromedriver + 236276
+8   chromedriver                        0x000000010b4c5fef chromedriver + 237551
+9   chromedriver                        0x000000010b83e848 chromedriver + 3876936
+10  chromedriver                        0x000000010b8423b6 chromedriver + 3892150
+11  chromedriver                        0x000000010b822afe chromedriver + 3762942
+12  chromedriver                        0x000000010b842ee2 chromedriver + 3895010
+13  chromedriver                        0x000000010b815770 chromedriver + 3708784
+14  chromedriver                        0x000000010b4c3c18 chromedriver + 228376
+15  dyld                                0x00007ff8076cf530 start + 3056
+
+2026-09-10 22:32:07,592 [ERROR] Error processing keyword 's': Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+0   chromedriver                        0x000000010b87351a chromedriver + 4093210
+1   chromedriver                        0x000000010b4f9da0 chromedriver + 449952
+2   chromedriver                        0x000000010b541b8d chromedriver + 744333
+3   chromedriver                        0x000000010b574346 chromedriver + 951110
+4   chromedriver                        0x000000010b56f134 chromedriver + 930100
+5   chromedriver                        0x000000010b56e937 chromedriver + 928055
+6   chromedriver                        0x000000010b4c558b chromedriver + 234891
+7   chromedriver                        0x000000010b4c5af4 chromedriver + 236276
+8   chromedriver                        0x000000010b4c5fef chromedriver + 237551
+9   chromedriver                        0x000000010b83e848 chromedriver + 3876936
+10  chromedriver                        0x000000010b8423b6 chromedriver + 3892150
+11  chromedriver                        0x000000010b822afe chromedriver + 3762942
+12  chromedriver                        0x000000010b842ee2 chromedriver + 3895010
+13  chromedriver                        0x000000010b815770 chromedriver + 3708784
+14  chromedriver                        0x000000010b4c3c18 chromedriver + 228376
+15  dyld                                0x00007ff8076cf530 start + 3056
+Traceback (most recent call last):
+  File "/Users/app/Documents/clarodraft/scp_scraper/main.py", line 74, in main
+    has_results = execute_keyword_search(driver, kw)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/app/Documents/clarodraft/scp_scraper/src/search_flow.py", line 61, in execute_keyword_search
+    WebDriverWait(driver, EXPLICIT_WAIT_TIMEOUT).until(
+  File "/Users/app/Documents/clarodraft/scp_scraper/.venv/lib/python3.12/site-packages/selenium/webdriver/support/wait.py", line 112, in until
+    value = method(self._driver)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/app/Documents/clarodraft/scp_scraper/src/search_flow.py", line 62, in <lambda>
+    lambda d: d.execute_script("return document.readyState") == "complete"
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/app/Documents/clarodraft/scp_scraper/.venv/lib/python3.12/site-packages/selenium/webdriver/remote/webdriver.py", line 616, in execute_script
+    return self.execute(command, {"script": script, "args": converted_args})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/app/Documents/clarodraft/scp_scraper/.venv/lib/python3.12/site-packages/selenium/webdriver/remote/webdriver.py", line 506, in execute
+    self.error_handler.check_response(response)
+  File "/Users/app/Documents/clarodraft/scp_scraper/.venv/lib/python3.12/site-packages/selenium/webdriver/remote/errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSessionIdException: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+0   chromedriver                        0x000000010b87351a chromedriver + 4093210
+1   chromedriver                        0x000000010b4f9da0 chromedriver + 449952
+2   chromedriver                        0x000000010b541b8d chromedriver + 744333
+3   chromedriver                        0x000000010b574346 chromedriver + 951110
+4   chromedriver                        0x000000010b56f134 chromedriver + 930100
+5   chromedriver                        0x000000010b56e937 chromedriver + 928055
+6   chromedriver                        0x000000010b4c558b chromedriver + 234891
+7   chromedriver                        0x000000010b4c5af4 chromedriver + 236276
+8   chromedriver                        0x000000010b4c5fef chromedriver + 237551
+9   chromedriver                        0x000000010b83e848 chromedriver + 3876936
+10  chromedriver                        0x000000010b8423b6 chromedriver + 3892150
+11  chromedriver                        0x000000010b822afe chromedriver + 3762942
+12  chromedriver                        0x000000010b842ee2 chromedriver + 3895010
+13  chromedriver                        0x000000010b815770 chromedriver + 3708784
+14  chromedriver                        0x000000010b4c3c18 chromedriver + 228376
+15  dyld                                0x00007ff8076cf530 start + 3056
+
+2026-09-10 22:32:07,594 [ERROR] Error processing keyword 't': Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+0   chromedriver                        0x000000010b87351a chromedriver + 4093210
+1   chromedriver                        0x000000010b4f9da0 chromedriver + 449952
+2   chromedriver                        0x000000010b541b8d chromedriver + 744333
+3   chromedriver                        0x000000010b574346 chromedriver + 951110
+4   chromedriver                        0x000000010b56f134 chromedriver + 930100
+5   chromedriver                        0x000000010b56e937 chromedriver + 928055
+6   chromedriver                        0x000000010b4c558b chromedriver + 234891
+7   chromedriver                        0x000000010b4c5af4 chromedriver + 236276
+8   chromedriver                        0x000000010b4c5fef chromedriver + 237551
+9   chromedriver                        0x000000010b83e848 chromedriver + 3876936
+10  chromedriver                        0x000000010b8423b6 chromedriver + 3892150
+11  chromedriver                        0x000000010b822afe chromedriver + 3762942
+12  chromedriver                        0x000000010b842ee2 chromedriver + 3895010
+13  chromedriver                        0x000000010b815770 chromedriver + 3708784
+14  chromedriver                        0x000000010b4c3c18 chromedriver + 228376
+15  dyld                                0x00007ff8076cf530 start + 3056
+Traceback (most recent call last):
+  File "/Users/app/Documents/clarodraft/scp_scraper/main.py", line 74, in main
+    has_results = execute_keyword_search(driver, kw)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/app/Documents/clarodraft/scp_scraper/src/search_flow.py", line 61, in execute_keyword_search
+    WebDriverWait(driver, EXPLICIT_WAIT_TIMEOUT).until(
+  File "/Users/app/Documents/clarodraft/scp_scraper/.venv/lib/python3.12/site-packages/selenium/webdriver/support/wait.py", line 112, in until
+    value = method(self._driver)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/app/Documents/clarodraft/scp_scraper/src/search_flow.py", line 62, in <lambda>
+    lambda d: d.execute_script("return document.readyState") == "complete"
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/app/Documents/clarodraft/scp_scraper/.venv/lib/python3.12/site-packages/selenium/webdriver/remote/webdriver.py", line 616, in execute_script
+    return self.execute(command, {"script": script, "args": converted_args})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/app/Documents/clarodraft/scp_scraper/.venv/lib/python3.12/site-packages/selenium/webdriver/remote/webdriver.py", line 506, in execute
+    self.error_handler.check_response(response)
+  File "/Users/app/Documents/clarodraft/scp_scraper/.venv/lib/python3.12/site-packages/selenium/webdriver/remote/errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSessionIdException: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+0   chromedriver                        0x000000010b87351a chromedriver + 4093210
+1   chromedriver                        0x000000010b4f9da0 chromedriver + 449952
+2   chromedriver                        0x000000010b541b8d chromedriver + 744333
+3   chromedriver                        0x000000010b574346 chromedriver + 951110
+4   chromedriver                        0x000000010b56f134 chromedriver + 930100
+5   chromedriver                        0x000000010b56e937 chromedriver + 928055
+6   chromedriver                        0x000000010b4c558b chromedriver + 234891
+7   chromedriver                        0x000000010b4c5af4 chromedriver + 236276
+8   chromedriver                        0x000000010b4c5fef chromedriver + 237551
+9   chromedriver                        0x000000010b83e848 chromedriver + 3876936
+10  chromedriver                        0x000000010b8423b6 chromedriver + 3892150
+11  chromedriver                        0x000000010b822afe chromedriver + 3762942
+12  chromedriver                        0x000000010b842ee2 chromedriver + 3895010
+13  chromedriver                        0x000000010b815770 chromedriver + 3708784
+14  chromedriver                        0x000000010b4c3c18 chromedriver + 228376
+15  dyld                                0x00007ff8076cf530 start + 3056
+
+2026-09-10 22:32:07,597 [ERROR] Error processing keyword 'u': Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+0   chromedriver                        0x000000010b87351a chromedriver + 4093210
+1   chromedriver                        0x000000010b4f9da0 chromedriver + 449952
+2   chromedriver                        0x000000010b541b8d chromedriver + 744333
+3   chromedriver                        0x000000010b574346 chromedriver + 951110
+4   chromedriver                        0x000000010b56f134 chromedriver + 930100
+5   chromedriver                        0x000000010b56e937 chromedriver + 928055
+6   chromedriver                        0x000000010b4c558b chromedriver + 234891
+7   chromedriver                        0x000000010b4c5af4 chromedriver + 236276
+8   chromedriver                        0x000000010b4c5fef chromedriver + 237551
+9   chromedriver                        0x000000010b83e848 chromedriver + 3876936
+10  chromedriver                        0x000000010b8423b6 chromedriver + 3892150
+11  chromedriver                        0x000000010b822afe chromedriver + 3762942
+12  chromedriver                        0x000000010b842ee2 chromedriver + 3895010
+13  chromedriver                        0x000000010b815770 chromedriver + 3708784
+14  chromedriver                        0x000000010b4c3c18 chromedriver + 228376
+15  dyld                                0x00007ff8076cf530 start + 3056
+Traceback (most recent call last):
+  File "/Users/app/Documents/clarodraft/scp_scraper/main.py", line 74, in main
+    has_results = execute_keyword_search(driver, kw)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/app/Documents/clarodraft/scp_scraper/src/search_flow.py", line 61, in execute_keyword_search
+    WebDriverWait(driver, EXPLICIT_WAIT_TIMEOUT).until(
+  File "/Users/app/Documents/clarodraft/scp_scraper/.venv/lib/python3.12/site-packages/selenium/webdriver/support/wait.py", line 112, in until
+    value = method(self._driver)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/app/Documents/clarodraft/scp_scraper/src/search_flow.py", line 62, in <lambda>
+    lambda d: d.execute_script("return document.readyState") == "complete"
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/app/Documents/clarodraft/scp_scraper/.venv/lib/python3.12/site-packages/selenium/webdriver/remote/webdriver.py", line 616, in execute_script
+    return self.execute(command, {"script": script, "args": converted_args})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/app/Documents/clarodraft/scp_scraper/.venv/lib/python3.12/site-packages/selenium/webdriver/remote/webdriver.py", line 506, in execute
+    self.error_handler.check_response(response)
+  File "/Users/app/Documents/clarodraft/scp_scraper/.venv/lib/python3.12/site-packages/selenium/webdriver/remote/errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSessionIdException: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+0   chromedriver                        0x000000010b87351a chromedriver + 4093210
+1   chromedriver                        0x000000010b4f9da0 chromedriver + 449952
+2   chromedriver                        0x000000010b541b8d chromedriver + 744333
+3   chromedriver                        0x000000010b574346 chromedriver + 951110
+4   chromedriver                        0x000000010b56f134 chromedriver + 930100
+5   chromedriver                        0x000000010b56e937 chromedriver + 928055
+6   chromedriver                        0x000000010b4c558b chromedriver + 234891
+7   chromedriver                        0x000000010b4c5af4 chromedriver + 236276
+8   chromedriver                        0x000000010b4c5fef chromedriver + 237551
+9   chromedriver                        0x000000010b83e848 chromedriver + 3876936
+10  chromedriver                        0x000000010b8423b6 chromedriver + 3892150
+11  chromedriver                        0x000000010b822afe chromedriver + 3762942
+12  chromedriver                        0x000000010b842ee2 chromedriver + 3895010
+13  chromedriver                        0x000000010b815770 chromedriver + 3708784
+14  chromedriver                        0x000000010b4c3c18 chromedriver + 228376
+15  dyld                                0x00007ff8076cf530 start + 3056
+
+2026-09-10 22:32:07,599 [ERROR] Error processing keyword 'v': Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+0   chromedriver                        0x000000010b87351a chromedriver + 4093210
+1   chromedriver                        0x000000010b4f9da0 chromedriver + 449952
+2   chromedriver                        0x000000010b541b8d chromedriver + 744333
+3   chromedriver                        0x000000010b574346 chromedriver + 951110
+4   chromedriver                        0x000000010b56f134 chromedriver + 930100
+5   chromedriver                        0x000000010b56e937 chromedriver + 928055
+6   chromedriver                        0x000000010b4c558b chromedriver + 234891
+7   chromedriver                        0x000000010b4c5af4 chromedriver + 236276
+8   chromedriver                        0x000000010b4c5fef chromedriver + 237551
+9   chromedriver                        0x000000010b83e848 chromedriver + 3876936
+10  chromedriver                        0x000000010b8423b6 chromedriver + 3892150
+11  chromedriver                        0x000000010b822afe chromedriver + 3762942
+12  chromedriver                        0x000000010b842ee2 chromedriver + 3895010
+13  chromedriver                        0x000000010b815770 chromedriver + 3708784
+14  chromedriver                        0x000000010b4c3c18 chromedriver + 228376
+15  dyld                                0x00007ff8076cf530 start + 3056
+Traceback (most recent call last):
+  File "/Users/app/Documents/clarodraft/scp_scraper/main.py", line 74, in main
+    has_results = execute_keyword_search(driver, kw)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/app/Documents/clarodraft/scp_scraper/src/search_flow.py", line 61, in execute_keyword_search
+    WebDriverWait(driver, EXPLICIT_WAIT_TIMEOUT).until(
+  File "/Users/app/Documents/clarodraft/scp_scraper/.venv/lib/python3.12/site-packages/selenium/webdriver/support/wait.py", line 112, in until
+    value = method(self._driver)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/app/Documents/clarodraft/scp_scraper/src/search_flow.py", line 62, in <lambda>
+    lambda d: d.execute_script("return document.readyState") == "complete"
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/app/Documents/clarodraft/scp_scraper/.venv/lib/python3.12/site-packages/selenium/webdriver/remote/webdriver.py", line 616, in execute_script
+    return self.execute(command, {"script": script, "args": converted_args})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/app/Documents/clarodraft/scp_scraper/.venv/lib/python3.12/site-packages/selenium/webdriver/remote/webdriver.py", line 506, in execute
+    self.error_handler.check_response(response)
+  File "/Users/app/Documents/clarodraft/scp_scraper/.venv/lib/python3.12/site-packages/selenium/webdriver/remote/errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSessionIdException: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+0   chromedriver                        0x000000010b87351a chromedriver + 4093210
+1   chromedriver                        0x000000010b4f9da0 chromedriver + 449952
+2   chromedriver                        0x000000010b541b8d chromedriver + 744333
+3   chromedriver                        0x000000010b574346 chromedriver + 951110
+4   chromedriver                        0x000000010b56f134 chromedriver + 930100
+5   chromedriver                        0x000000010b56e937 chromedriver + 928055
+6   chromedriver                        0x000000010b4c558b chromedriver + 234891
+7   chromedriver                        0x000000010b4c5af4 chromedriver + 236276
+8   chromedriver                        0x000000010b4c5fef chromedriver + 237551
+9   chromedriver                        0x000000010b83e848 chromedriver + 3876936
+10  chromedriver                        0x000000010b8423b6 chromedriver + 3892150
+11  chromedriver                        0x000000010b822afe chromedriver + 3762942
+12  chromedriver                        0x000000010b842ee2 chromedriver + 3895010
+13  chromedriver                        0x000000010b815770 chromedriver + 3708784
+14  chromedriver                        0x000000010b4c3c18 chromedriver + 228376
+15  dyld                                0x00007ff8076cf530 start + 3056
+
+2026-09-10 22:32:07,600 [ERROR] Error processing keyword 'w': Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+0   chromedriver                        0x000000010b87351a chromedriver + 4093210
+1   chromedriver                        0x000000010b4f9da0 chromedriver + 449952
+2   chromedriver                        0x000000010b541b8d chromedriver + 744333
+3   chromedriver                        0x000000010b574346 chromedriver + 951110
+4   chromedriver                        0x000000010b56f134 chromedriver + 930100
+5   chromedriver                        0x000000010b56e937 chromedriver + 928055
+6   chromedriver                        0x000000010b4c558b chromedriver + 234891
+7   chromedriver                        0x000000010b4c5af4 chromedriver + 236276
+8   chromedriver                        0x000000010b4c5fef chromedriver + 237551
+9   chromedriver                        0x000000010b83e848 chromedriver + 3876936
+10  chromedriver                        0x000000010b8423b6 chromedriver + 3892150
+11  chromedriver                        0x000000010b822afe chromedriver + 3762942
+12  chromedriver                        0x000000010b842ee2 chromedriver + 3895010
+13  chromedriver                        0x000000010b815770 chromedriver + 3708784
+14  chromedriver                        0x000000010b4c3c18 chromedriver + 228376
+15  dyld                                0x00007ff8076cf530 start + 3056
+Traceback (most recent call last):
+  File "/Users/app/Documents/clarodraft/scp_scraper/main.py", line 74, in main
+    has_results = execute_keyword_search(driver, kw)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/app/Documents/clarodraft/scp_scraper/src/search_flow.py", line 61, in execute_keyword_search
+    WebDriverWait(driver, EXPLICIT_WAIT_TIMEOUT).until(
+  File "/Users/app/Documents/clarodraft/scp_scraper/.venv/lib/python3.12/site-packages/selenium/webdriver/support/wait.py", line 112, in until
+    value = method(self._driver)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/app/Documents/clarodraft/scp_scraper/src/search_flow.py", line 62, in <lambda>
+    lambda d: d.execute_script("return document.readyState") == "complete"
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/app/Documents/clarodraft/scp_scraper/.venv/lib/python3.12/site-packages/selenium/webdriver/remote/webdriver.py", line 616, in execute_script
+    return self.execute(command, {"script": script, "args": converted_args})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/app/Documents/clarodraft/scp_scraper/.venv/lib/python3.12/site-packages/selenium/webdriver/remote/webdriver.py", line 506, in execute
+    self.error_handler.check_response(response)
+  File "/Users/app/Documents/clarodraft/scp_scraper/.venv/lib/python3.12/site-packages/selenium/webdriver/remote/errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSessionIdException: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+0   chromedriver                        0x000000010b87351a chromedriver + 4093210
+1   chromedriver                        0x000000010b4f9da0 chromedriver + 449952
+2   chromedriver                        0x000000010b541b8d chromedriver + 744333
+3   chromedriver                        0x000000010b574346 chromedriver + 951110
+4   chromedriver                        0x000000010b56f134 chromedriver + 930100
+5   chromedriver                        0x000000010b56e937 chromedriver + 928055
+6   chromedriver                        0x000000010b4c558b chromedriver + 234891
+7   chromedriver                        0x000000010b4c5af4 chromedriver + 236276
+8   chromedriver                        0x000000010b4c5fef chromedriver + 237551
+9   chromedriver                        0x000000010b83e848 chromedriver + 3876936
+10  chromedriver                        0x000000010b8423b6 chromedriver + 3892150
+11  chromedriver                        0x000000010b822afe chromedriver + 3762942
+12  chromedriver                        0x000000010b842ee2 chromedriver + 3895010
+13  chromedriver                        0x000000010b815770 chromedriver + 3708784
+14  chromedriver                        0x000000010b4c3c18 chromedriver + 228376
+15  dyld                                0x00007ff8076cf530 start + 3056
+
+2026-09-10 22:32:07,603 [ERROR] Error processing keyword 'x': Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+0   chromedriver                        0x000000010b87351a chromedriver + 4093210
+1   chromedriver                        0x000000010b4f9da0 chromedriver + 449952
+2   chromedriver                        0x000000010b541b8d chromedriver + 744333
+3   chromedriver                        0x000000010b574346 chromedriver + 951110
+4   chromedriver                        0x000000010b56f134 chromedriver + 930100
+5   chromedriver                        0x000000010b56e937 chromedriver + 928055
+6   chromedriver                        0x000000010b4c558b chromedriver + 234891
+7   chromedriver                        0x000000010b4c5af4 chromedriver + 236276
+8   chromedriver                        0x000000010b4c5fef chromedriver + 237551
+9   chromedriver                        0x000000010b83e848 chromedriver + 3876936
+10  chromedriver                        0x000000010b8423b6 chromedriver + 3892150
+11  chromedriver                        0x000000010b822afe chromedriver + 3762942
+12  chromedriver                        0x000000010b842ee2 chromedriver + 3895010
+13  chromedriver                        0x000000010b815770 chromedriver + 3708784
+14  chromedriver                        0x000000010b4c3c18 chromedriver + 228376
+15  dyld                                0x00007ff8076cf530 start + 3056
+Traceback (most recent call last):
+  File "/Users/app/Documents/clarodraft/scp_scraper/main.py", line 74, in main
+    has_results = execute_keyword_search(driver, kw)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/app/Documents/clarodraft/scp_scraper/src/search_flow.py", line 61, in execute_keyword_search
+    WebDriverWait(driver, EXPLICIT_WAIT_TIMEOUT).until(
+  File "/Users/app/Documents/clarodraft/scp_scraper/.venv/lib/python3.12/site-packages/selenium/webdriver/support/wait.py", line 112, in until
+    value = method(self._driver)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/app/Documents/clarodraft/scp_scraper/src/search_flow.py", line 62, in <lambda>
+    lambda d: d.execute_script("return document.readyState") == "complete"
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/app/Documents/clarodraft/scp_scraper/.venv/lib/python3.12/site-packages/selenium/webdriver/remote/webdriver.py", line 616, in execute_script
+    return self.execute(command, {"script": script, "args": converted_args})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/app/Documents/clarodraft/scp_scraper/.venv/lib/python3.12/site-packages/selenium/webdriver/remote/webdriver.py", line 506, in execute
+    self.error_handler.check_response(response)
+  File "/Users/app/Documents/clarodraft/scp_scraper/.venv/lib/python3.12/site-packages/selenium/webdriver/remote/errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSessionIdException: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+0   chromedriver                        0x000000010b87351a chromedriver + 4093210
+1   chromedriver                        0x000000010b4f9da0 chromedriver + 449952
+2   chromedriver                        0x000000010b541b8d chromedriver + 744333
+3   chromedriver                        0x000000010b574346 chromedriver + 951110
+4   chromedriver                        0x000000010b56f134 chromedriver + 930100
+5   chromedriver                        0x000000010b56e937 chromedriver + 928055
+6   chromedriver                        0x000000010b4c558b chromedriver + 234891
+7   chromedriver                        0x000000010b4c5af4 chromedriver + 236276
+8   chromedriver                        0x000000010b4c5fef chromedriver + 237551
+9   chromedriver                        0x000000010b83e848 chromedriver + 3876936
+10  chromedriver                        0x000000010b8423b6 chromedriver + 3892150
+11  chromedriver                        0x000000010b822afe chromedriver + 3762942
+12  chromedriver                        0x000000010b842ee2 chromedriver + 3895010
+13  chromedriver                        0x000000010b815770 chromedriver + 3708784
+14  chromedriver                        0x000000010b4c3c18 chromedriver + 228376
+15  dyld                                0x00007ff8076cf530 start + 3056
+
+2026-09-10 22:32:07,605 [ERROR] Error processing keyword 'y': Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+0   chromedriver                        0x000000010b87351a chromedriver + 4093210
+1   chromedriver                        0x000000010b4f9da0 chromedriver + 449952
+2   chromedriver                        0x000000010b541b8d chromedriver + 744333
+3   chromedriver                        0x000000010b574346 chromedriver + 951110
+4   chromedriver                        0x000000010b56f134 chromedriver + 930100
+5   chromedriver                        0x000000010b56e937 chromedriver + 928055
+6   chromedriver                        0x000000010b4c558b chromedriver + 234891
+7   chromedriver                        0x000000010b4c5af4 chromedriver + 236276
+8   chromedriver                        0x000000010b4c5fef chromedriver + 237551
+9   chromedriver                        0x000000010b83e848 chromedriver + 3876936
+10  chromedriver                        0x000000010b8423b6 chromedriver + 3892150
+11  chromedriver                        0x000000010b822afe chromedriver + 3762942
+12  chromedriver                        0x000000010b842ee2 chromedriver + 3895010
+13  chromedriver                        0x000000010b815770 chromedriver + 3708784
+14  chromedriver                        0x000000010b4c3c18 chromedriver + 228376
+15  dyld                                0x00007ff8076cf530 start + 3056
+Traceback (most recent call last):
+  File "/Users/app/Documents/clarodraft/scp_scraper/main.py", line 74, in main
+    has_results = execute_keyword_search(driver, kw)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/app/Documents/clarodraft/scp_scraper/src/search_flow.py", line 61, in execute_keyword_search
+    WebDriverWait(driver, EXPLICIT_WAIT_TIMEOUT).until(
+  File "/Users/app/Documents/clarodraft/scp_scraper/.venv/lib/python3.12/site-packages/selenium/webdriver/support/wait.py", line 112, in until
+    value = method(self._driver)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/app/Documents/clarodraft/scp_scraper/src/search_flow.py", line 62, in <lambda>
+    lambda d: d.execute_script("return document.readyState") == "complete"
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/app/Documents/clarodraft/scp_scraper/.venv/lib/python3.12/site-packages/selenium/webdriver/remote/webdriver.py", line 616, in execute_script
+    return self.execute(command, {"script": script, "args": converted_args})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/app/Documents/clarodraft/scp_scraper/.venv/lib/python3.12/site-packages/selenium/webdriver/remote/webdriver.py", line 506, in execute
+    self.error_handler.check_response(response)
+  File "/Users/app/Documents/clarodraft/scp_scraper/.venv/lib/python3.12/site-packages/selenium/webdriver/remote/errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSessionIdException: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+0   chromedriver                        0x000000010b87351a chromedriver + 4093210
+1   chromedriver                        0x000000010b4f9da0 chromedriver + 449952
+2   chromedriver                        0x000000010b541b8d chromedriver + 744333
+3   chromedriver                        0x000000010b574346 chromedriver + 951110
+4   chromedriver                        0x000000010b56f134 chromedriver + 930100
+5   chromedriver                        0x000000010b56e937 chromedriver + 928055
+6   chromedriver                        0x000000010b4c558b chromedriver + 234891
+7   chromedriver                        0x000000010b4c5af4 chromedriver + 236276
+8   chromedriver                        0x000000010b4c5fef chromedriver + 237551
+9   chromedriver                        0x000000010b83e848 chromedriver + 3876936
+10  chromedriver                        0x000000010b8423b6 chromedriver + 3892150
+11  chromedriver                        0x000000010b822afe chromedriver + 3762942
+12  chromedriver                        0x000000010b842ee2 chromedriver + 3895010
+13  chromedriver                        0x000000010b815770 chromedriver + 3708784
+14  chromedriver                        0x000000010b4c3c18 chromedriver + 228376
+15  dyld                                0x00007ff8076cf530 start + 3056
+
+2026-09-10 22:32:07,607 [ERROR] Error processing keyword 'z': Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+0   chromedriver                        0x000000010b87351a chromedriver + 4093210
+1   chromedriver                        0x000000010b4f9da0 chromedriver + 449952
+2   chromedriver                        0x000000010b541b8d chromedriver + 744333
+3   chromedriver                        0x000000010b574346 chromedriver + 951110
+4   chromedriver                        0x000000010b56f134 chromedriver + 930100
+5   chromedriver                        0x000000010b56e937 chromedriver + 928055
+6   chromedriver                        0x000000010b4c558b chromedriver + 234891
+7   chromedriver                        0x000000010b4c5af4 chromedriver + 236276
+8   chromedriver                        0x000000010b4c5fef chromedriver + 237551
+9   chromedriver                        0x000000010b83e848 chromedriver + 3876936
+10  chromedriver                        0x000000010b8423b6 chromedriver + 3892150
+11  chromedriver                        0x000000010b822afe chromedriver + 3762942
+12  chromedriver                        0x000000010b842ee2 chromedriver + 3895010
+13  chromedriver                        0x000000010b815770 chromedriver + 3708784
+14  chromedriver                        0x000000010b4c3c18 chromedriver + 228376
+15  dyld                                0x00007ff8076cf530 start + 3056
+Traceback (most recent call last):
+  File "/Users/app/Documents/clarodraft/scp_scraper/main.py", line 74, in main
+    has_results = execute_keyword_search(driver, kw)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/app/Documents/clarodraft/scp_scraper/src/search_flow.py", line 61, in execute_keyword_search
+    WebDriverWait(driver, EXPLICIT_WAIT_TIMEOUT).until(
+  File "/Users/app/Documents/clarodraft/scp_scraper/.venv/lib/python3.12/site-packages/selenium/webdriver/support/wait.py", line 112, in until
+    value = method(self._driver)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/app/Documents/clarodraft/scp_scraper/src/search_flow.py", line 62, in <lambda>
+    lambda d: d.execute_script("return document.readyState") == "complete"
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/app/Documents/clarodraft/scp_scraper/.venv/lib/python3.12/site-packages/selenium/webdriver/remote/webdriver.py", line 616, in execute_script
+    return self.execute(command, {"script": script, "args": converted_args})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/app/Documents/clarodraft/scp_scraper/.venv/lib/python3.12/site-packages/selenium/webdriver/remote/webdriver.py", line 506, in execute
+    self.error_handler.check_response(response)
+  File "/Users/app/Documents/clarodraft/scp_scraper/.venv/lib/python3.12/site-packages/selenium/webdriver/remote/errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSessionIdException: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+0   chromedriver                        0x000000010b87351a chromedriver + 4093210
+1   chromedriver                        0x000000010b4f9da0 chromedriver + 449952
+2   chromedriver                        0x000000010b541b8d chromedriver + 744333
+3   chromedriver                        0x000000010b574346 chromedriver + 951110
+4   chromedriver                        0x000000010b56f134 chromedriver + 930100
+5   chromedriver                        0x000000010b56e937 chromedriver + 928055
+6   chromedriver                        0x000000010b4c558b chromedriver + 234891
+7   chromedriver                        0x000000010b4c5af4 chromedriver + 236276
+8   chromedriver                        0x000000010b4c5fef chromedriver + 237551
+9   chromedriver                        0x000000010b83e848 chromedriver + 3876936
+10  chromedriver                        0x000000010b8423b6 chromedriver + 3892150
+11  chromedriver                        0x000000010b822afe chromedriver + 3762942
+12  chromedriver                        0x000000010b842ee2 chromedriver + 3895010
+13  chromedriver                        0x000000010b815770 chromedriver + 3708784
+14  chromedriver                        0x000000010b4c3c18 chromedriver + 228376
+15  dyld                                0x00007ff8076cf530 start + 3056
+
+2026-09-10 22:32:07,620 [INFO] SCP-Fetch execution terminated.
+2026-09-15 18:35:28,462 [INFO] Starting SCP-Fetch Scraper...
+2026-09-15 18:35:28,463 [INFO] Loaded 13 keywords from '/Users/app/Documents/clarodraft/scp_scraper/data/input/keywords.csv'.
+2026-09-15 18:35:28,468 [INFO] Initialized output CSV files with headers.
+2026-09-15 18:35:28,468 [INFO] ====== WebDriver manager ======
+2026-09-15 18:35:29,084 [INFO] Get LATEST chromedriver version for google-chrome
+2026-09-15 18:35:29,513 [INFO] Get LATEST chromedriver version for google-chrome
+2026-09-15 18:35:30,038 [INFO] WebDriver version 152.0.7977.82 selected
+2026-09-15 18:35:30,049 [INFO] Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/152.0.7977.82/mac-x64/chromedriver-mac-x64.zip
+2026-09-15 18:35:30,049 [INFO] About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/152.0.7977.82/mac-x64/chromedriver-mac-x64.zip
+2026-09-15 18:35:30,603 [INFO] Driver downloading response is 200
+2026-09-15 18:35:32,479 [INFO] Driver has been saved in cache [/Users/app/.wdm/drivers/chromedriver/mac64/152.0.7977.82]
+2026-09-15 18:35:57,469 [WARNING] Encountered stale row element during extraction, skipping row.
+2026-09-15 18:35:57,473 [WARNING] Encountered stale row element during extraction, skipping row.
+2026-09-15 18:35:57,478 [WARNING] Encountered stale row element during extraction, skipping row.
+2026-09-15 18:35:57,483 [WARNING] Encountered stale row element during extraction, skipping row.
+2026-09-15 18:35:57,488 [WARNING] Encountered stale row element during extraction, skipping row.
+2026-09-15 18:35:57,492 [WARNING] Encountered stale row element during extraction, skipping row.
+2026-09-15 18:35:57,497 [WARNING] Encountered stale row element during extraction, skipping row.
+2026-09-15 18:35:57,502 [WARNING] Encountered stale row element during extraction, skipping row.
+2026-09-15 18:35:57,507 [WARNING] Encountered stale row element during extraction, skipping row.
+2026-09-15 18:35:57,513 [WARNING] Encountered stale row element during extraction, skipping row.
+2026-09-15 18:35:57,518 [WARNING] Encountered stale row element during extraction, skipping row.
+2026-09-15 18:35:57,523 [WARNING] Encountered stale row element during extraction, skipping row.
+2026-09-15 18:35:57,528 [WARNING] Encountered stale row element during extraction, skipping row.
+2026-09-15 18:35:57,534 [WARNING] Encountered stale row element during extraction, skipping row.
+2026-09-15 18:35:57,539 [WARNING] Encountered stale row element during extraction, skipping row.
+2026-09-15 18:35:57,544 [WARNING] Encountered stale row element during extraction, skipping row.
+2026-09-15 18:35:57,549 [WARNING] Encountered stale row element during extraction, skipping row.
+2026-09-15 18:35:57,554 [WARNING] Encountered stale row element during extraction, skipping row.
+2026-09-15 18:35:57,559 [WARNING] Encountered stale row element during extraction, skipping row.
+2026-09-15 18:35:57,565 [WARNING] Encountered stale row element during extraction, skipping row.
+2026-09-15 18:35:57,570 [WARNING] Encountered stale row element during extraction, skipping row.
+2026-09-15 18:46:03,942 [INFO] Appended 3671 records to '/Users/app/Documents/clarodraft/scp_scraper/data/output/judgments_results.csv'.
+2026-09-15 18:56:06,663 [INFO] Appended 3758 records to '/Users/app/Documents/clarodraft/scp_scraper/data/output/judgments_results.csv'.
+2026-09-15 19:03:26,216 [INFO] Appended 3601 records to '/Users/app/Documents/clarodraft/scp_scraper/data/output/judgments_results.csv'.
+2026-09-15 19:06:27,050 [INFO] Appended 1117 records to '/Users/app/Documents/clarodraft/scp_scraper/data/output/judgments_results.csv'.
+2026-09-15 19:16:33,320 [INFO] Appended 3726 records to '/Users/app/Documents/clarodraft/scp_scraper/data/output/judgments_results.csv'.
+2026-09-15 19:26:58,307 [INFO] Appended 3701 records to '/Users/app/Documents/clarodraft/scp_scraper/data/output/judgments_results.csv'.
+2026-09-15 19:35:06,524 [INFO] Appended 3750 records to '/Users/app/Documents/clarodraft/scp_scraper/data/output/judgments_results.csv'.
+2026-09-15 19:42:45,152 [WARNING] Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectionResetError(54, 'Connection reset by peer')': /session/a89509a452d7246a502716a23fea2cd0
+2026-09-15 19:42:45,154 [WARNING] Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='localhost', port=61152): Failed to establish a new connection: [Errno 61] Connection refused")': /session/a89509a452d7246a502716a23fea2cd0
+2026-09-15 19:42:45,156 [WARNING] Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='localhost', port=61152): Failed to establish a new connection: [Errno 61] Connection refused")': /session/a89509a452d7246a502716a23fea2cd0
+2026-09-15 19:42:45,158 [INFO] SCP-Fetch execution terminated.
+2026-09-15 19:44:06,720 [INFO] Starting SCP-Fetch Scraper...
+2026-09-15 19:44:06,720 [INFO] Loaded 6 keywords from '/Users/app/Documents/clarodraft/scp_scraper/data/input/keywords.csv'.
+2026-09-15 19:44:06,723 [INFO] Initialized output CSV files with headers.
+2026-09-15 19:44:06,724 [INFO] ====== WebDriver manager ======
+2026-09-15 19:44:06,861 [INFO] Driver [/Users/app/.wdm/drivers/chromedriver/mac64/152.0.7977.82/chromedriver-mac-x64/chromedriver] found in cache by browser version
+2026-09-15 19:51:35,750 [INFO] Appended 3564 records to '/Users/app/Documents/clarodraft/scp_scraper/data/output/judgments_results.csv'.
+2026-09-15 19:59:26,219 [INFO] Appended 3294 records to '/Users/app/Documents/clarodraft/scp_scraper/data/output/judgments_results.csv'.
+2026-09-15 20:06:43,498 [INFO] Appended 2073 records to '/Users/app/Documents/clarodraft/scp_scraper/data/output/judgments_results.csv'.
+2026-09-15 20:09:24,939 [INFO] Appended 685 records to '/Users/app/Documents/clarodraft/scp_scraper/data/output/judgments_results.csv'.
+2026-09-15 20:16:29,967 [INFO] Appended 2781 records to '/Users/app/Documents/clarodraft/scp_scraper/data/output/judgments_results.csv'.
+2026-09-15 20:21:57,686 [INFO] Appended 1118 records to '/Users/app/Documents/clarodraft/scp_scraper/data/output/judgments_results.csv'.
+2026-09-15 20:21:58,010 [INFO] SCP-Fetch execution terminated.
